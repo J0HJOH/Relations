@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_me">
+
+    <fragment
+        android:id="@+id/navigation_me"
+        android:name="com.tech4decv.myconnection.ui.me.MeFragment"
+        android:label="Me"
+        tools:layout="@layout/fragment_me" />
+
+    <fragment
+        android:id="@+id/navigation_my_family"
+        android:name="com.tech4decv.myconnection.ui.myFamily.FamilyFragment"
+        android:label="My Family"
+        tools:layout="@layout/fragment_my_family" />
+
+    <fragment
+        android:id="@+id/navigation_my_friends"
+        android:name="com.tech4decv.myconnection.ui.friends.FriendsFragment"
+        android:label="My Friends"
+        tools:layout="@layout/fragment_my_friends" />
+</navigation>
